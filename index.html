@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> My Portfolio </title>
+	<link rel="icon" href="W:\MY PROJECT\final project\favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Therese Elvira Mombou Gatsing">
+</head>
+<style>
+
+ul{
+	 overflow: hidden;
+	 margin:0;
+	 padding:0;
+	background-color: rgba(0, 0, 255, 0.5)
+}
+
+li a:hover{
+	background-color: #F33A6A;
+}
+
+li {
+	float:left;
+	list-style-type: none;
+}
+
+li a {
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	display:block;
+	text-align: center;
+	width:250px;
+}
+
+.content-section{
+	display:none;
+
+}
+.content-section div{
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.active{
+	display:block;
+	padding: 0;
+}
+
+
+
+
+</style>
+
+</head>
+
+<body >
+
+
+<header>
+<nav>
+	<ul>
+		<li><a href="#Home" title="Home" onclick="showSection('Home')">Home</a></li>
+		<li><a href="#Aboutme" title="About me" onclick="showSection('Aboutme')">About me</a></li>
+		<li><a href="#Resume" title="Resume" onclick="showSection('Resume')">Resume</a></li>
+		<li><a href="#Project" title="Project" onclick="showSection('Project')">Project</a></li>
+		<li><a href="#Contact" title="Contact" onclick="showSection('Contact')">Contact</a></li>
+	</ul>
+</nav>
+</header>
+
+
+<script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+
+            var activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+</script>
+
+<section id="Home" class="content-section active"> 
+	<h1 style="color:white; font-size:40px; font-family: Ariel; text-align: left; background-color: rgba(0, 0, 255, 0.5); padding: 50px;height:300px;  text-align:justify;"> Welcome to my Portfolio <br> <br> A meticulously constructed website designed to provide a thorough summary of my skills, background, and expertise.</h1>
+	<img src="W:\MY PROJECT\final project\html_photo.png"  alt="My picture" style="width:400px; height:500px;float:left;margin:100px;margin-top:2px; " >
+	<aside>
+		<p style="text-align:justify; font-size:25px;  background-color: lightblue; width:1300px; padding:50px; display:block; height:400px; margin-top:30px; margin-left:50px;"> 
+		My name is Therese Elvira Mombou Gatsing, a class of 2027, and I am currently pursuing a Bachelor of Science in Computer Science at Washington and Lee University. As a passionate web developer and software enthusiast, I thrive on exploring new technologies and applying my knowledge to real-world projects. 
+		In addition to my academic pursuits, I actively participate in various tech clubs, including GenTech and the Cybersecurity Club. These experiences allow me to stay at the forefront of industry trends and collaborate with like-minded individuals who share my passion for innovation. 
+		I am thrilled to share that I will be joining the university’s Computer Science Department as a teaching assistant for courses in data structures, object-oriented programming (OOP), and Python. This opportunity allows me to contribute to the growth and learning of fellow students while deepening my own understanding of these fundamental topics.
+
+		</p>
+	</aside>
+</section>
+
+<section id="Aboutme" class="content-section">
+<br><br>
+	<div style="background-color:#008080;height:400px;padding:20px ;  text-align:justify; "> 
+	<h2 style="font-size:30px"> Background</h2>
+	<p style="font-size:20px;"> As a Cameroonian native with a strong interest in computer science, I've been immersed in the world of technology since I was very young. My path in technology began with my brother's support, who also majored in computer science, creating a collaborative environment of creativity and discovery.
+<br><br>At the Microsoft Office Championship, my proficiency in Word 2019, Excel 2019, and PowerPoint 2019 was acknowledged, awarding me a specialist license and confirming my technical proficiency.<br><br>
+The NASA EED Mentoring Program provides participants with extensive interview preparation, networking opportunities, and competitive internship training. This experience is helping me improve my professional skills and broaden my understanding of the aerospace sector.
+<br><br> In addition to my technical ambitions, I am an active member of Girls Who Code and Rewriting the Code, where I am dedicated to lifelong learning and networking. These communities have been crucial to my development, providing opportunities to learn new skills and connect with like-minded people.
+<br><br> This year, I accepted the post of Storage Scholar Brand Ambassador, which tested my communication and marketing abilities. Through this venture, I have developed my capacity to engage audiences and communicate effectively, relying on my teamwork skills to achieve success.
+
+	</p>
+	</div>
+	<br><br>
+
+	<div style="background-color: pink; height:200px; text-align:justify;padding:20px"> 
+	<h2 style="font-size:30px">Education</h2>
+	<p style="font-size:20px;"> I completed my secondary education at Government Bilingual High School Dschang, located in the western region of Cameroon. During my twelfth grade, I served as the President of the Computer Science Club, where I organized workshops focused on Microsoft Office applications. These workshops aimed to enhance the computer literacy of underclassmen.<br><br>
+	Currently, I am a full-time student at Washington and Lee University, pursuing a Bachelor of Science degree in Computer Science. Beyond my technical pursuits, I am actively engaged in the African Society Club and the Gaming Club, which enriches my collegiate experience.
+	</p>
+	</div>
+	<br><br>
+
+	<div style="background-color:lightblue; height:700px; padding:20px;  text-align:justify"> 
+	<h2 style="font-size:30px;"> Skills </h2>
+	<p style="font-size:25px;"> <b>Programming Languages & Technologies </b></p> 
+		<dl style="font-size:20px;">
+			<dt> <b>Python</b></dt>
+			<dd>Advanced proficiency in Python, with a strong grasp of both fundamental and advanced concepts, including object-oriented programming (OOP) and data structures</dd>
+			<dt><b>HTML and CSS </b></dt>
+			<dd>Skilled in creating well-structured and styled web pages using HTML5 and CSS3, ensuring responsiveness and cross-browser compatibility.</dd>
+			<dt><b>JavaScript</b></dt>
+			<dd>Competent in utilizing JavaScript to enhance user interfaces and improve the interactivity of web applications.</dd>
+		</dl> <br>
+	<p style="font-size:25px;"> <b>Office Specialist Proficiency </b> </p>
+		<dl style="font-size:20px;">
+			<dt><b>Microsoft Word 2019</b></dt>
+			<dd> Accomplished in creating, formatting, and editing documents, including advanced features like styles, templates, and mail merge.</dd>
+			<dt><b> Microsoft Excel 2019</b></dt>
+			<dd> Proficient in data analysis, formula creation, pivot tables, and charting, enabling efficient decision-making.</dd>
+			<dt> <b>Microsoft PowerPoint 2019 </b></dt>
+			<dd> Skilled at designing impactful presentations, incorporating animations, transitions, and multimedia elements</dd>
+		</dl><br>
+	<p style="font-size:25px;"> <b>Soft Skills </b></p> 
+		<ul style="background-color:lightblue; list-style-type:square; font-size:20px;">
+			<li> Teamwork </li><br>
+			<li> Communication </li><br>
+			<li> Problem Solving </li>
+		</ul>
+	</div>
+</section>
+
+<section id="Resume" class="content-section" >
+	<br><br><br>
+	<h2 style="text-align:center; font-size:30px; "> My Professional Resume </h2>
+	<p1 style="text-align:center; font-size:20px; "> Below is my current resume, showcasing my skills, projects, and qualifications. Please feel free to scroll through the document and </p1> 
+	<p2>
+        <button><a href="W:\MY PROJECT\final project\resume.pdf" target="_blank" style="text-align:center; font-size:20px; text-decoration:none; color:black;" download>Download</a></button>
+    </p2> <br><br>
+	<iframe src="W:\MY PROJECT\final project\resume.pdf" style="display:center;margin-left:300px; width:800px; height:900px;"></iframe>
+</section>
+
+<section id="Project" class="content-section" >
+</section>
+
+<section id="Contact" class="content-section">
+<h2 style="background-image:url('html_photo_2.png'); height:100px; color:white; font-size:40px; text-align:center;padding-top:100px;"> <b>Contact Me </b></h2>
+<p> For inquiries or further information, please do not hesitate to reach out to me at:<a href="mailto:tmombougatsing@mail.wlu.edu"> tmombougatsing@mail.wlu.edu</a></p>
+<br><br>
+<p> Please click on the image below to be directed to my LinkedIn profile </p>
+<a href="https://www.linkedin.com/in/therese-elvira-mombou-gatsing-146694301" target="_blank"><img src="linkedin_pic.png" style="width:100px; height:100px;" alt="linkedin_logo"></a>
+
+
+</section>
+
+
+</body>
+</html>
